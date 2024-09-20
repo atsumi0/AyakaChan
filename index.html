@@ -18,4 +18,8 @@
             <a-gltf-model  id="model" src="AyakaChan.gltf"  position="0 -1 0" rotation="0 0 0" scale="10 10 10" animation-mixer></a-gltf-model>
             </a-scene>
   </body>
+  <script>
+    //glTFの表示が暗くなる問題に対処
+    document.querySelector("a-scene").renderer.gammaOutput=true;
+</script>
 </html>
