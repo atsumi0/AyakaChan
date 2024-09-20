@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
      <!-- アニメーション用 -->
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
      <!-- 画面コントロール -->
     <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
-    <title>untitled</title>
+    <link rel="stylesheet" href="main.css">
+    <title>ARあやかちゃん</title>
   </head>
   <body>
     <a-scene embedded arjs vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;">
 </a-entity>
         <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5; maxPolarAngle:180; minDistance: 0.5; maxDistance: 200; initialPosition: 0 0 30"></a-entity>
             <!-- 3Dモデル（gltfファイル） -->
-            <a-gltf-model scale="10 10 10" id="model" src="AyakaChan.gltf"  position="0 -1 0" rotation="0 0 0" animation-mixer></a-gltf-model>
+            <a-gltf-model id="model" src="AyakaChan.gltf"  position="0 -1 0" rotation="0 0 0" scale="10 10 10" animation-mixer></a-gltf-model>
         </a-scene>
   </body>
     <script>
