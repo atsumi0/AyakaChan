@@ -4,6 +4,5 @@
     }
 
 #arjsDebugUIContainer{
-    display: flex !important; 
-    align-items: flex-start !important; 
+    display:none;
 }
