@@ -1,6 +1,6 @@
 .a-canvas {
-        display: flex !important; 
-        align-items: flex-start !important; 
+    height: calc(100vw* 0.75);
+    width: 100vw;
     }
 .body {
         display: flex !important; 
