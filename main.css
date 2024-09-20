@@ -1,4 +1,4 @@
 .a-canvas {
-        display: flex;
-        align-items: flex-start;
+        display: flex !important; 
+        align-items: flex-start !important; 
     }
