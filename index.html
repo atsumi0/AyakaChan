@@ -11,6 +11,15 @@
       <a-box position="5 0 -7" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-assets timeout="30000">
+        <a-asset-item id="car_obj" src="./assets/car/car.obj"></a-asset-item>
+        <a-asset-item id="car_mtl" src="./assets/car.mtl"></a-asset-item>
+        <a-asset-item id="submarine_gltf" src="./assets/submarine/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <!-- GLTF-->
+    <a-gltf-model src="#submarine_gltf" position="-5 5 -15" rotation="0 -20 0"></a-gltf-model>
+
     </a-scene>
   </body>
 </html>
