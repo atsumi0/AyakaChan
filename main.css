@@ -2,11 +2,10 @@
         display: flex !important; 
         align-items: flex-start !important; 
     }
-.a-scene {
+.body {
         display: flex !important; 
         align-items: flex-start !important; 
     }
-
 #arjsDebugUIContainer{
     display:none;
 }
