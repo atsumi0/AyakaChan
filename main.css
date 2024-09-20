@@ -6,6 +6,6 @@
         display: flex !important; 
         align-items: flex-start !important; 
     }
-#arjsDebugUIContainer{
+#arjsDebugUIContainer {
     display:none;
 }
