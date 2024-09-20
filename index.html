@@ -16,17 +16,11 @@
 </a-entity>
         <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5; maxPolarAngle:180; minDistance: 0.5; maxDistance: 200; initialPosition: 0 0 30"></a-entity>
             <!-- 3Dモデル（gltfファイル） -->
-            <a-gltf-model id="model" src="AyakaChan.gltf"  position="0 -1 0" rotation="0 0 0" scale="10 10 10" height="1" depth="1" width="1" animation-mixer></a-gltf-model>
+            <a-gltf-model id="model" src="AyakaChan.gltf"  position="0 -1 10" rotation="0 0 0" scale="10 10 10"  animation-mixer></a-gltf-model>
         </a-scene>
   </body>
     <script>
       //glTFの表示が暗くなる問題に対処
       document.querySelector("a-scene").renderer.gammaOutput=true;
-      const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
   </script>
 </html>
