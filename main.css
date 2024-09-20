@@ -1,4 +1,4 @@
 .a-canvas {
-    height: calc(100vw* 0.75);
-    width: 100vw;
+    height: 100vw;
+    width: calc(100vw* 2);
     }
