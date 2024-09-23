@@ -15,17 +15,6 @@
      <!-- 画面コントロール -->
     <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript">
-			AFRAME.registerComponent('change-model',{
-                init:function(){
-                    var modelEl=document.getElementById('target');                    
-                    document.addEventListener('click', ()=>{
-                        modelEl.removeAttribute('gltf-model')
-                        modelEl.setAttribute('gltf-model', '#model2')
-                    });
-                }
-            });
-		</script>
   </head>
   <body>
     <a-scene embedded arjs vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;">
@@ -33,12 +22,7 @@
                   position="-10 10 10"></a-entity>
         <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5; maxPolarAngle:180; minDistance: 0.5; maxDistance: 200; initialPosition: 0 0 30"></a-entity>
             <!-- 3Dモデル（gltfファイル） -->
-            <a-assets>
-            <a-asset-item id='model1' src='AyakaChan.gltf'></a-asset-item>
-            <a-asset-item id='model2' src='AyakaChan2.gltf'></a-asset-item>
-          </a-assets>
-            <a-entity gltf-model="#model1" animation-mixer change-model></a-entity>
-
+            <a-gltf-model id="model" src="AyakaChan.gltf" position="-8 -5 0" rotation="0 0 0" scale="8 8 8" animation-mixer></a-gltf-model>
         </a-scene>
   </body>
   <script>
